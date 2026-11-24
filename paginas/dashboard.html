@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel analítico demonstrativo do Projeto ReViver.">
+  <title>ReViver | Dashboard analítico</title>
+  <link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+<div class="screen"><div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="home.html"><span class="logo-mark">✦</span><span>ReViver<small>CIÊNCIA DE DADOS</small></span></a>
+    <div class="top-actions"><a class="secondary-btn" href="chatbot.html">🤖 Chat com dados</a><a class="secondary-btn" href="home.html">← Início</a><button id="refreshDashboard" class="icon-btn" type="button" aria-label="Atualizar dados" title="Atualizar">↻</button></div>
+  </header>
+  <main class="dashboard-page">
+    <div class="dashboard-heading"><div><p class="eyebrow">PAINEL DE INDICADORES</p><h1>Dashboard analítico</h1><p class="dashboard-subtitle">Visão geral dos registros demonstrativos do Projeto ReViver.</p></div><span id="apiStatus" class="status-pill" role="status" aria-live="polite">Conectando…</span></div>
+    <div id="dataNotice" class="data-notice">Carregando informações sobre os dados…</div>
+    <section class="metric-grid" aria-label="Indicadores principais">
+      <article class="metric-card"><span class="metric-label">Usuários cadastrados</span><strong id="mUsers">—</strong><small id="mUsersDetail">Aguardando dados</small></article>
+      <article class="metric-card"><span class="metric-label">Conversas registradas</span><strong id="mChats">—</strong><small id="mChatsDetail">Aguardando dados</small></article>
+      <article class="metric-card"><span class="metric-label">Encaminhamentos realizados</span><strong id="mReferrals">—</strong><small id="mReferralsDetail">Aguardando dados</small></article>
+      <article class="metric-card"><span class="metric-label">Clínicas com atendimento ativo</span><strong id="mClinics">—</strong><small id="mClinicsDetail">Aguardando dados</small></article>
+    </section>
+    <section class="dashboard-grid">
+      <article class="chart-card"><div class="section-heading"><div><h2>Conversas por dia</h2><p>Quantidade de conversas registradas em cada data.</p></div></div><div id="conversationsChart" class="chart-area"><p class="chart-empty">Carregando gráfico…</p></div></article>
+      <article class="chart-card"><div class="section-heading"><div><h2>Encaminhamentos por dia</h2><p>Conversas com encaminhamento marcado como realizado.</p></div></div><div id="referralsChart" class="chart-area"><p class="chart-empty">Carregando gráfico…</p></div></article>
+    </section>
+    <section class="dashboard-grid lower-grid">
+      <article class="chart-card"><div class="section-heading"><div><h2>Perfil dos usuários</h2><p>Distribuição dos registros por tipo de usuário.</p></div></div><div id="usersBreakdown" class="breakdown"></div></article>
+      <article class="chart-card"><div class="section-heading"><div><h2>Situação das clínicas</h2><p>Status informado no arquivo de clínicas.</p></div></div><div id="clinicsBreakdown" class="breakdown"></div></article>
+    </section>
+    <section class="table-card"><div class="section-heading"><div><h2>Indicadores detalhados</h2><p>Totais e proporções calculados a partir dos arquivos CSV.</p></div></div>
+      <div class="table-scroll"><table><thead><tr><th>Indicador</th><th>Quantidade</th><th>Percentual</th></tr></thead><tbody id="detailRows"><tr><td colspan="3">Carregando…</td></tr></tbody></table></div>
+    </section>
+    <footer class="dashboard-footer">Projeto acadêmico ReViver · Painel demonstrativo. Não use estes dados para decisões clínicas ou avaliação de tratamentos.</footer>
+  </main>
+</div></div>
+<script src="../js/dashboard.js"></script>
+</body></html>

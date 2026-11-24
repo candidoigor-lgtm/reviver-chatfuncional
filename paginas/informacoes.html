@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>ReViver | Suas informações</title><link rel="stylesheet" href="../css/base.css"></head><body><div class="screen"><div class="app-shell"><main class="page"><a class="back js-back" data-back="home.html" href="home.html" aria-label="Voltar para o início">‹</a><div class="leaf-watermark">✦</div><h1 class="page-title">Suas informações</h1><p class="page-subtitle">Nos conte um pouco sobre você.</p><form id="profileForm" class="panel form-panel" style="position:relative;z-index:1;max-width:1000px"><div class="form-fields">
+<div class="field"><label for="nome">Nome completo</label><input class="input" id="nome" placeholder="Digite seu nome completo"></div>
+<div class="field"><label for="idade">Idade</label><input class="input" id="idade" type="number" min="0" placeholder="Ex.: 18"></div>
+<div class="field">
+    <label for="substanceSelector">Você faz o uso de qual tipo de substância?</label>
+
+    <div class="multi-select" id="substanceSelector">
+        <button type="button" class="multi-select-button" id="substanceButton" aria-expanded="false">
+            <span id="substanceSelectedText">Selecione</span>
+            <span class="multi-select-arrow">⌄</span>
+        </button>
+
+        <div class="multi-select-options" id="substanceOptions">
+            <label class="multi-option"><input type="checkbox" name="droga" value="Álcool (etanol)"><span>Álcool (etanol)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Nicotina"><span>Nicotina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Cannabis (maconha)"><span>Cannabis (maconha)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Cocaína"><span>Cocaína</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Metanfetamina"><span>Metanfetamina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Anfetamina"><span>Anfetamina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="MDMA (ecstasy)"><span>MDMA (ecstasy)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Heroína"><span>Heroína</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Fentanil"><span>Fentanil</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Morfina"><span>Morfina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Oxicodona"><span>Oxicodona</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Tramadol"><span>Tramadol</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Alprazolam"><span>Alprazolam</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Diazepam"><span>Diazepam</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Clonazepam"><span>Clonazepam</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Cetamina"><span>Cetamina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="LSD"><span>LSD</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Psilocibina"><span>Psilocibina</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="GHB"><span>GHB</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Inalantes (solventes e vapores)"><span>Inalantes (solventes e vapores)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Canabinoides sintéticos"><span>Canabinoides sintéticos</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Cafeína"><span>Cafeína</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Óxido nitroso"><span>Óxido nitroso</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Esteroides anabolizantes"><span>Esteroides anabolizantes</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Dextrometorfano (uso indevido)"><span>Dextrometorfano (uso indevido)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Pseudoefedrina (uso indevido)"><span>Pseudoefedrina (uso indevido)</span></label>
+            <label class="multi-option"><input type="checkbox" name="droga" value="Bupropiona (uso indevido)"><span>Bupropiona (uso indevido)</span></label>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="field" style="margin-top:12px"><a class="button" href="verificar-csv.html" style="display:inline-block;text-decoration:none;padding:12px 16px;border-radius:10px;background:#1c3554;color:#fff;font-weight:700">Verificar arquivos CSV</a></div>
+<div class="field"><label for="situacao">Qual a situação que você está passando?</label><textarea class="textarea" id="situacao" placeholder="Conte um pouco sobre o que está acontecendo..."></textarea></div>
+<button class="primary-btn" type="submit">Continuar</button></div><div class="field" style="margin-top:18px"><a class="button" href="guia-substancias.html" style="display:inline-block;text-decoration:none;padding:12px 16px;border-radius:10px;background:#245b91;color:#fff;font-weight:700">Consultar efeitos e sinais das substâncias</a></div></form></main></div></div><script src="../js/api.js"></script><script src="../js/app.js"></script></body></html>

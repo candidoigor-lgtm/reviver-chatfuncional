@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReViver | Apoio e Orientação</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <style>
+    .support-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+    .support-card{padding:24px;border:1px solid rgba(21,151,255,.5);border-radius:20px;background:rgba(5,39,67,.78)}
+    .support-card h2{font-size:21px;margin-bottom:9px}.support-card p,.support-card li{color:#b4d5f2;line-height:1.55}
+    .support-card ul{padding-left:20px;margin-top:10px}.support-card li+li{margin-top:6px}
+    .support-icon{font-size:28px;margin-bottom:12px}.support-call{display:inline-flex;margin-top:12px;color:#7bc8ff;font-weight:800;font-size:19px}
+    .support-highlight{padding:22px 24px;margin-top:20px;border-radius:18px;border:1px solid rgba(255,190,90,.55);background:rgba(115,75,20,.17)}
+    .support-highlight p{color:#ffe0ad;line-height:1.55}
+    @media(max-width:650px){.support-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="screen"><div class="app-shell">
+  <main class="page">
+    <a class="back js-back" data-back="home.html" href="home.html" aria-label="Voltar para o início">‹</a>
+    <div class="leaf-watermark">✦</div>
+    <p class="eyebrow">Você não está sozinho</p>
+    <h1 class="page-title">Apoio e Orientação</h1>
+    <p class="page-subtitle">Informação, acolhimento e caminhos para buscar ajuda.</p>
+    <section class="panel" style="padding:26px;position:relative;z-index:1">
+      <h2 style="font-size:24px;margin-bottom:10px">Dar o primeiro passo já é importante.</h2>
+      <p style="color:#b4d5f2;line-height:1.6">Se você está preocupado com o próprio uso de substâncias ou com alguém próximo, procure conversar com uma pessoa de confiança e com um profissional de saúde. Você merece ser ouvido, sem julgamentos.</p>
+    </section>
+    <div class="support-grid" style="position:relative;z-index:1">
+      <article class="support-card"><div class="support-icon">🤝</div><h2>Onde encontrar acolhimento</h2><p>Você pode procurar a Unidade Básica de Saúde (UBS) do seu bairro ou um Centro de Atenção Psicossocial (CAPS). Os CAPS AD atendem pessoas que precisam de apoio relacionado ao uso de álcool e outras drogas.</p><a class="primary-btn" href="mapa.html" style="margin-top:16px">Ver mapa de atendimento</a></article>
+      <article class="support-card"><div class="support-icon">🩺</div><h2>Como se preparar para pedir ajuda</h2><ul><li>Conte como você está se sentindo, no seu tempo.</li><li>Se puder, anote dúvidas e situações que têm preocupado você.</li><li>Peça a alguém de confiança para acompanhar você.</li><li>Seja sincero com a equipe de saúde sobre o que aconteceu.</li></ul></article>
+      <article class="support-card"><div class="support-icon">💙</div><h2>Como apoiar alguém próximo</h2><ul><li>Escute com respeito e evite acusações.</li><li>Mostre que a pessoa não precisa enfrentar isso sozinha.</li><li>Incentive a busca por atendimento profissional.</li><li>Cuide também dos seus limites e procure orientação.</li></ul></article>
+      <article class="support-card"><div class="support-icon">📚</div><h2>Informação e prevenção</h2><p>Conhecer os riscos, reconhecer mudanças no comportamento e conversar abertamente pode ajudar. Cada pessoa tem uma história e o cuidado deve ser individualizado.</p><a class="secondary-btn" href="informacoes.html" style="margin-top:16px">Consultar informações</a></article>
+    </div>
+    <section class="support-highlight" style="position:relative;z-index:1">
+      <h2 style="color:#ffe0ad;margin-bottom:8px">Precisa de ajuda urgente?</h2>
+      <p>Em uma emergência médica, como perda de consciência, dificuldade para respirar, convulsão ou risco imediato à vida, ligue para o SAMU pelo <strong>192</strong> ou procure um serviço de emergência. Para conversar em momentos de sofrimento emocional, o CVV atende pelo <strong>188</strong>, gratuitamente, 24 horas por dia.</p>
+    </section>
+    <div class="action-row" style="margin-top:22px;flex-wrap:wrap;position:relative;z-index:1">
+      <a class="primary-btn" href="chatbot.html">Conversar com o chatbot</a>
+      <a class="secondary-btn" href="home.html">Voltar ao início</a>
+    </div>
+    <p class="footer-note">O ReViver oferece orientação informativa e não substitui avaliação ou tratamento profissional.</p>
+  </main>
+</div></div>
+<script src="../js/api.js"></script><script src="../js/app.js"></script>
+</body>
+</html>

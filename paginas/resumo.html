@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReViver | Resumo de dados</title><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/resumo.css">
+</head>
+<body><main class="summary-page">
+  <a class="back-link" href="home.html">← Voltar</a>
+  <header class="summary-header"><p class="eyebrow">REVIVER · CIÊNCIA DE DADOS</p><h1>Resumo dos dados</h1><p>Indicadores de demonstração carregados pela API do projeto.</p></header>
+  <div class="summary-toolbar"><span id="apiStatus" role="status" aria-live="polite">Preparando consulta…</span><button id="refreshSummary" type="button">Atualizar dados</button></div>
+  <p id="dataNotice" class="data-notice">Carregando aviso sobre a origem dos dados…</p>
+  <section id="summaryCards" class="summary-cards" aria-label="Indicadores"></section>
+  <section class="summary-table-section"><h2>Registros por substância</h2><p>Os números abaixo são contagens de registros fictícios presentes no CSV.</p>
+    <div class="table-scroll"><table><thead><tr><th>Substância</th><th>Registros</th><th>Meta atingida</th><th>Parcial</th><th>Não atingida</th></tr></thead><tbody id="substanceRows"><tr><td colspan="5">Carregando…</td></tr></tbody></table></div>
+  </section>
+  <footer>Projeto acadêmico ReViver. Estes dados não representam pessoas reais nem devem ser usados para avaliar tratamentos.</footer>
+</main><script src="../js/api.js"></script><script src="../js/resumo.js"></script></body></html>
